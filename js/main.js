@@ -10,11 +10,11 @@ function HandleOnClick(obj) {
         {
             case "BBBButton":
                 vidsource.src = "https://upload.wikimedia.org/wikipedia/commons/transcoded/8/88/Big_Buck_Bunny_alt.webm/Big_Buck_Bunny_alt.webm.360p.vp9.webm";
-                vidsource.type = "video/webm_s"
+                vidsource.type = 'video/webm_s; swdecoder=true;' 
                 break;
             case "GDButton":
                 vidsource.src = "https://upload.wikimedia.org/wikipedia/commons/transcoded/1/19/Glazing-Doughnuts.webm/Glazing-Doughnuts.webm.360p.vp9.webm";
-                vidsource.type = "video/webm_s"
+                vidsource.type = 'video/webm_s; swdecoder=true;'
                 break;
         }
         vid_elm.load();
